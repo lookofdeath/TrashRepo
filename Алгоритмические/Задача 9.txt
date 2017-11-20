@@ -1,0 +1,13 @@
+	Scanner scan = new Scanner(System.in);
+        double[] dots = new double[13];
+        for (int i = 0; i<dots.length; i++)
+        {
+            dots[i] = scan.nextDouble();
+        }
+        double x1 = dots[10];
+        double y1 = dots[11];
+        double radius = dots[12];
+
+        for (int i = 0; i<dots.length-3; i+=2){
+            System.out.println(Math.sqrt(Math.pow(x1-dots[i],2)+Math.pow(y1-dots[i+1],2))<=radius?"YES":"NO");
+        }

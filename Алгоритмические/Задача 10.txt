@@ -1,0 +1,24 @@
+        Scanner scan = new Scanner(System.in);
+        int[] dots = new int[8];
+        for (int i = 0; i<dots.length; i++)
+        {
+            dots[i] = scan.nextInt();
+        }
+
+        int maxAX = Math.max(dots[0],dots[2]);
+        int maxBX = Math.max(dots[4],dots[6]);
+        int minAX = Math.min(dots[0],dots[2]);
+        int minBX = Math.min(dots[4],dots[6]);
+        int maxAY = Math.max(dots[1],dots[3]);
+        int maxBY = Math.max(dots[5],dots[7]);
+        int minAY = Math.min(dots[1],dots[3]);
+        int minBY = Math.min(dots[5],dots[7]);
+
+        int semiAreaX = maxAX >= maxBX && maxBX > minAX?maxBX-minAX:0;
+        semiAreaX = maxBX >= maxAX && maxAX > minBX?maxAX-minBX:semiAreaX;
+        int semiAreaY = maxAY >= maxBY && maxBY > minAY?maxBY-minAY:0;
+        semiAreaY = maxBY >= maxAY && maxAY > minBY?maxAY-minBY:semiAreaY;
+        int area = semiAreaX*semiAreaY;
+
+        System.out.println(area);
+        }

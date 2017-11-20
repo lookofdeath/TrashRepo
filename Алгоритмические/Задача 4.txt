@@ -1,0 +1,14 @@
+        Scanner scan = new Scanner(System.in);
+        int numberPrime = 4;
+        int number = numberPrime;
+
+        if (number<=0){
+            number=0;
+        }
+        else {
+            number=(int)Math.round(Math.sqrt(number));
+            if (Math.pow(number,2)!= numberPrime){
+                number*=number;
+            }
+        }
+        System.out.println(number);

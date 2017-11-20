@@ -1,0 +1,14 @@
+        Scanner scan = new Scanner(System.in);
+        double[] dots = new double[14];
+        for (int i = 0; i<dots.length; i++)
+        {
+            dots[i] = scan.nextDouble();
+        }
+        double x1 = Math.abs(dots[10]);
+        double y1 = Math.abs(dots[11]);
+        double x2 = Math.abs(dots[12]);
+        double y2 = Math.abs(dots[13]);
+
+        for (int i = 0; i<dots.length-4; i+=2){
+            System.out.println(Math.abs(dots[i])<=x1 && Math.abs(dots[i])<=x2 && Math.abs(dots[i+1])<=y1 && Math.abs(dots[i+1])<=y2?"YES":"NO");
+        }

@@ -1,0 +1,7 @@
+	Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+
+        if(number>0){number*=number;}
+        else if (number<0){number=Math.abs(number);}
+
+        System.out.println(number);
