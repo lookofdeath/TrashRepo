@@ -1,0 +1,7 @@
+int number = 123;
+       if(number > 99 & number < 1000)
+       {
+
+          System.out.println((number%100)*10+ (number/100));
+
+       }

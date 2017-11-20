@@ -1,0 +1,11 @@
+ Scanner scan = new Scanner(System.in);
+       int numberNext = scan.nextInt();
+       if(numberNext >= -10000 && numberNext <= 10000){
+	if(numberNext%2 == 0){
+           System.out.println(numberNext+2);
+	}
+	else{
+	System.out.println(numberNext+1);
+	}
+       }
+       

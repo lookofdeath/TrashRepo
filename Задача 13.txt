@@ -1,0 +1,10 @@
+Scanner scan = new Scanner(System.in);
+       int numberNext = scan.nextInt();
+       if(numberNext >= 1000 && numberNext <= 9999){
+           int n4 = numberNext%10;
+           int n3 = numberNext/10%10;
+           int n2 = numberNext/100%10;
+           int n1 = numberNext/1000;
+           System.out.println(n4*1000+n3*100+n2*10+n1);
+                    
+           }

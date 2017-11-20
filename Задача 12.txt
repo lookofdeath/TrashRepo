@@ -1,0 +1,24 @@
+        Scanner scan = new Scanner(System.in);
+        int numberNext = scan.nextInt();
+        if(numberNext >= 10000 && numberNext <= 99999){
+            int n5 = numberNext%10;
+            int n4 = numberNext/10%10;
+            int n3 = numberNext/100%10;
+            int n2 = numberNext/1000%10;
+            int n1 = numberNext/10000;
+           System.out.println(n5*10000+n4*1000+n3*100+n2*10+n1);
+       }
+
+
+
+  	 Scanner scan = new Scanner(System.in);
+        int numberNext = scan.nextInt();
+        if(numberNext >= 10000 && numberNext <= 99999){
+            int sum;
+            int summ = 0;
+            for(int del=1,i = 10000; del<100000; del = del*10, i = i/10){
+             sum = numberNext/del%10;
+             summ = summ + sum*i;
+            }
+            System.out.println(summ);
+            }

@@ -1,0 +1,9 @@
+        Scanner scan = new Scanner(System.in);
+        int hours = scan.nextInt();
+        int minutes = scan.nextInt();
+        int seconds = scan.nextInt();
+        seconds++;
+        if(seconds>59){seconds = 0; minutes++;}
+        if(minutes>59){minutes = 0; hours++;}
+        if(hours>23){hours = 0;}
+        System.out.println(hours+" "+minutes+" "+seconds);

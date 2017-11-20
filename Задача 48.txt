@@ -1,0 +1,12 @@
+        Scanner scan = new Scanner(System.in);
+        double radian = scan.nextDouble();
+
+        double degreeH = 360/12;
+        double degreeM = degreeH/60;
+
+        double degreeInput = Math.toDegrees(radian);
+        double degreeTimeH = degreeInput/degreeH;
+        double degreeTimeM = (degreeInput%degreeH)/degreeM;
+        double degreeMinuteVsLine = degreeTimeM*6;
+
+        System.out.println(degreeMinuteVsLine+"\n"+(int)degreeTimeH+" "+(int)degreeTimeM);

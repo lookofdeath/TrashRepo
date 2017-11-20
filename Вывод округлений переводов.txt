@@ -1,0 +1,8 @@
+Locale locale = new Locale("en");
+        Locale.setDefault(locale);
+        String pattern = "##0.00";
+        DecimalFormat decimalFormat = new DecimalFormat(pattern);
+        String format = decimalFormat.format(25.5600);
+
+        double newDouble = new BigDecimal(format).setScale(3, RoundingMode.UP).doubleValue();
+        System.out.println(newDouble);

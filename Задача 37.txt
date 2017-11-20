@@ -1,0 +1,12 @@
+        Scanner scan = new Scanner(System.in);
+        int numberA = scan.nextInt();
+        int numberB = scan.nextInt();
+        int numberC = scan.nextInt();
+
+        double coordinatesX1 = (-numberB-Math.sqrt(Math.pow(numberB,2)-(4*numberA*numberC)))/2*numberA;
+        double coordinatesX2 = (-numberB+Math.sqrt(Math.pow(numberB,2)-(4*numberA*numberC)))/2*numberA;
+
+        String resX1 = String.format(Locale.ENGLISH,"%.3f", coordinatesX1);
+        String resX2 = String.format(Locale.ENGLISH,"%.3f", coordinatesX2);
+
+        System.out.println(resX1+" "+resX2);

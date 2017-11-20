@@ -1,0 +1,13 @@
+Scanner scan = new Scanner(System.in);
+        int storonaA = scan.nextInt();
+        int storonaB = scan.nextInt();
+        int storonaC = scan.nextInt();
+
+        double semiPerimetr = (storonaA+storonaB+storonaC)/2;
+
+       // double heigthA = 2*Math.sqrt(semiPerimetr*(semiPerimetr-storonaA)*(semiPerimetr-storonaB)*(semiPerimetr-storonaC))/storonaA;
+
+        String heigthA = String.format(Locale.ENGLISH,"%.3f",2*Math.sqrt(semiPerimetr*(semiPerimetr-storonaA)*(semiPerimetr-storonaB)*(semiPerimetr-storonaC))/storonaA);
+        String heigthB = String.format(Locale.ENGLISH,"%.3f",2*Math.sqrt(semiPerimetr*(semiPerimetr-storonaA)*(semiPerimetr-storonaB)*(semiPerimetr-storonaC))/storonaB);
+        String heigthC = String.format(Locale.ENGLISH,"%.3f",2*Math.sqrt(semiPerimetr*(semiPerimetr-storonaA)*(semiPerimetr-storonaB)*(semiPerimetr-storonaC))/storonaC);
+        System.out.print(heigthA+"\n"+heigthB+"\n"+heigthC);

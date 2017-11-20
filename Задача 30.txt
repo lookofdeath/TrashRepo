@@ -1,0 +1,14 @@
+        Scanner scan = new Scanner(System.in);
+        int coordinatesAX = scan.nextInt();
+        int coordinatesAY = scan.nextInt();
+        int coordinatesBX = scan.nextInt();
+        int coordinatesBY = scan.nextInt();
+        int coordinatesCX = scan.nextInt();
+        int coordinatesCY = scan.nextInt();
+
+        double rebroAB = Math.sqrt(Math.pow(coordinatesAX-coordinatesBX,2)+Math.pow(coordinatesAY-coordinatesBY,2));
+        double rebroBC = Math.sqrt(Math.pow(coordinatesBX-coordinatesCX,2)+Math.pow(coordinatesBY-coordinatesCY,2));
+        double rebroCA = Math.sqrt(Math.pow(coordinatesCX-coordinatesAX,2)+Math.pow(coordinatesCY-coordinatesAY,2));
+        double semiPerimetr = (rebroAB+rebroBC+rebroCA)/2;
+        double areaGerona = Math.sqrt(semiPerimetr*(semiPerimetr-rebroAB)*(semiPerimetr-rebroBC)*(semiPerimetr-rebroCA));
+        System.out.printf(Locale.ENGLISH, "%.3f", areaGerona);

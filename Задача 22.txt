@@ -1,0 +1,10 @@
+  Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        if(Math.abs(number/1000) > 0 && Math.abs(number/1000) < 10){
+            int numberMod = Math.abs(number);
+            int n1 = numberMod/1000;
+            int n2 = numberMod/100%10;
+            int n3 = numberMod/10%10;
+            int n4 = numberMod%10;
+            System.out.println(n1+n2+n3+n4);
+        }

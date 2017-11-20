@@ -1,0 +1,6 @@
+int number = 4;
+       if(number >= -10000 & number <= 10000)
+       {
+           System.out.println("The next number for " + number +" is " + (number+1));
+           System.out.println("The previous number for " + number +" is " + (number-1));
+       }

@@ -1,0 +1,12 @@
+        Scanner scan = new Scanner(System.in);
+        int storonaA = scan.nextInt();
+        int storonaB = scan.nextInt();
+        int storonaC = scan.nextInt();
+
+        double medianaA = Math.sqrt(2*Math.pow(storonaB,2)+2*Math.pow(storonaC,2)-Math.pow(storonaA,2))/2;
+        String resA = String.format(Locale.ENGLISH,"%.3f",medianaA);
+        double medianaB = Math.sqrt(2*Math.pow(storonaA,2)+2*Math.pow(storonaC,2)-Math.pow(storonaB,2))/2;
+        String resB = String.format(Locale.ENGLISH,"%.3f",medianaB);
+        double medianaC = Math.sqrt(2*Math.pow(storonaA,2)+2*Math.pow(storonaB,2)-Math.pow(storonaC,2))/2;
+        String resC = String.format(Locale.ENGLISH,"%.3f",medianaC);
+        System.out.print(resA+"\n"+resB+"\n"+resC);

@@ -1,0 +1,7 @@
+ int dayKM = 700, rañingKM = 715;
+        if(dayKM < 100000 & dayKM > 0 & rañingKM < 100000 & rañingKM > 0)
+        {
+
+            System.out.println((int)Math.ceil((double)rañingKM/dayKM));//ïğèâèäåíèå ê èíòó
+
+        }

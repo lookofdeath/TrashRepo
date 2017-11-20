@@ -1,0 +1,34 @@
+        Scanner scan = new Scanner(System.in);
+        int speed = scan.nextInt();
+        int time = scan.nextInt();
+        if(speed != 0 && speed <= 200 && time > 0 && time <=200){
+            int tracks = 109;
+            int finish = speed*time;
+            if(speed < 0){
+                do{finish = finish + tracks;}
+                while ( Math.abs(finish) > tracks );
+                System.out.println(Math.abs(finish));
+            }
+            else {
+                while( finish > tracks ){
+                finish = finish - tracks;
+            }
+            System.out.println(finish);
+            }
+        }
+
+
+
+
+        Scanner scan = new Scanner(System.in);
+        int speed = scan.nextInt();
+        int time = scan.nextInt();
+        if(speed != 0 && speed <= 200 && time > 0 && time <=200){
+            int tracks = 109;
+            int finish = Math.abs(speed*time)%tracks;
+            if(speed < 0){
+                finish = tracks - finish;
+            }
+                   System.out.println(finish);
+            }
+

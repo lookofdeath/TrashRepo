@@ -1,0 +1,3 @@
+int heigth = 7, speed = 4, unspeed = 1;
+       int res = (int)Math.max(Math.ceil((heigth-unspeed)/(speed-unspeed)),1);
+        System.out.println(res);

@@ -1,0 +1,5 @@
+  Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        if(number > Math.pow(-10,9) && number < Math.pow(10,9)){
+            System.out.println(Math.abs(number/10%10));
+        }

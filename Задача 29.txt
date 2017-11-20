@@ -1,0 +1,7 @@
+        Scanner scan = new Scanner(System.in);
+        int rebroA = scan.nextInt();
+        int rebroB = scan.nextInt();
+        int rebroC = scan.nextInt();
+        int semiPerimetr = (rebroA+rebroB+rebroC)/2;
+        double areaGerona = Math.sqrt(semiPerimetr*(semiPerimetr-rebroA)*(semiPerimetr-rebroB)*(semiPerimetr-rebroC));
+        System.out.printf(Locale.ENGLISH, "%.3f", areaGerona);

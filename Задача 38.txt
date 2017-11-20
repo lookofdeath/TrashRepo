@@ -1,0 +1,15 @@
+        Scanner scan = new Scanner(System.in);
+        int numberA = scan.nextInt();
+        int numberB = scan.nextInt();
+
+        double garmonycheskoye = 2/(1.0/numberA+1.0/numberB);
+        double geometricheskoye = Math.sqrt(numberA*numberB);
+        double ariphmeticheskoye = (numberA+numberB)/2;
+        double kvadraticheskoye = Math.sqrt(Math.pow(numberA,2)+Math.pow(numberB,2))/Math.sqrt(2);
+
+        String task1 = String.format(Locale.ENGLISH,"%.3f",garmonycheskoye);
+        String task2 = String.format(Locale.ENGLISH,"%.3f",geometricheskoye);
+        String task3 = String.format(Locale.ENGLISH,"%.3f",ariphmeticheskoye);
+        String task4 = String.format(Locale.ENGLISH,"%.3f",kvadraticheskoye);
+
+        System.out.print(task1+"\n"+task2+"\n"+task3+"\n"+task4);

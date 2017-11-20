@@ -1,0 +1,7 @@
+   Scanner scan = new Scanner(System.in);
+        int height = scan.nextInt();
+        int lenght = scan.nextInt();
+        if(height >= 1 && height <= 10000 && 1<=lenght && lenght <= 10000){
+            System.out.println(2*height+2*lenght);
+            System.out.println(height*lenght);
+            }

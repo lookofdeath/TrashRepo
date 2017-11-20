@@ -1,0 +1,22 @@
+DecimalFormat doubleNumber = new DecimalFormat("00");
+        Scanner scan = new Scanner(System.in);
+        int secondsPlus = scan.nextInt();
+        
+        String seconds = doubleNumber.format(secondsPlus%60);
+        String minutes = doubleNumber.format((secondsPlus%3600)/60);        
+        String hours = doubleNumber.format((secondsPlus/3600)%24);
+       
+
+        System.out.println(hours+":"+minutes+":"+seconds);
+
+
+
+
+        Scanner scan = new Scanner(System.in);
+        int secondsPlus = scan.nextInt();
+
+        int s = secondsPlus%60;
+        int m = (secondsPlus%3600)/60;
+        int h = (secondsPlus/3600)%24;
+
+        System.out.printf("%02d:%02d:%02d",h,m,s);

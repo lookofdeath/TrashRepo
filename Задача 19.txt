@@ -1,0 +1,5 @@
+Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        if(number > 9 && number < 100){
+            System.out.println(number/10);
+            }

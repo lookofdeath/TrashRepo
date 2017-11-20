@@ -1,0 +1,5 @@
+        Scanner scan = new Scanner(System.in);
+        int radiusCircle = scan.nextInt();
+        double areaCircle = Math.rint(1000*(Math.PI*Math.pow(radiusCircle,2)))/1000;
+        double lengthCircle = Math.rint(1000*(2*Math.PI*radiusCircle))/1000;
+        System.out.printf(areaCircle+"\n"+lengthCircle);

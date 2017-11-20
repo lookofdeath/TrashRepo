@@ -1,0 +1,16 @@
+        Scanner scan = new Scanner(System.in);
+        int lengthRoom = scan.nextInt();
+        int widthRoom = scan.nextInt();
+        int heigthRoom = scan.nextInt();
+
+        int widthRulon = scan.nextInt();
+        int lengthRulon = scan.nextInt();
+
+        double areaRoom = 2*(heigthRoom*lengthRoom)+2*(heigthRoom*widthRoom)+(lengthRoom*widthRoom);
+        areaRoom = areaRoom-(areaRoom/100)*15; // Минус 15% на двери и окна
+        double areaRulon = (widthRulon/1000.0)*(lengthRulon/1000.0);
+        areaRulon = areaRulon-(areaRulon/100)*10; // Минус 10% на обрезки
+
+        int result = (int)Math.round(areaRoom/areaRulon);
+
+        System.out.println(result);

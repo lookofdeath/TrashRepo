@@ -1,0 +1,15 @@
+        Scanner scan = new Scanner(System.in);
+        int hoursOne = scan.nextInt();
+        int minutesOne = scan.nextInt();
+        int secondsOne = scan.nextInt();
+
+        int hoursTwo = scan.nextInt();
+        int minutesTwo = scan.nextInt();
+        int secondsTwo = scan.nextInt();
+
+        secondsTwo = hoursTwo*3600+minutesTwo*60+secondsTwo;
+        secondsOne = hoursOne*3600+minutesOne*60+secondsOne;
+
+        int secondsRes = Math.abs(secondsTwo-secondsOne);
+
+        System.out.print(secondsRes);

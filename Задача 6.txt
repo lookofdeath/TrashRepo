@@ -1,0 +1,9 @@
+int number = 123;
+       if(number > 99 & number < 1000)
+       {
+           int num1 = (number-number%10)/10;
+           int num2 = num1%10;
+
+           System.out.println(number%10*100+num2*10+(num1-num2)/10);
+
+       }

@@ -1,0 +1,16 @@
+        Scanner scan = new Scanner(System.in);
+        int hours = scan.nextInt();
+        int minutes = scan.nextInt();
+        int seconds = scan.nextInt();
+
+        double hSpeed = 360/12;
+        double mSpeed = hSpeed/60;
+        double sSpeed = mSpeed/60;
+
+        double degreeH = hSpeed*hours;
+        double degreeM = mSpeed*minutes;
+        double degreeS = sSpeed*seconds;
+
+        double res = degreeH+degreeM+degreeS;
+
+        System.out.printf(Locale.ENGLISH,"Угол смещения стрелки составил %.4f градусов",res);

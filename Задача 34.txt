@@ -1,0 +1,13 @@
+        Scanner scan = new Scanner(System.in);
+        int numberK = scan.nextInt();
+
+        int numberKA = numberK/2;
+        int numberKB = numberKA+9;
+        int numberKC = numberKB%10;
+        if(numberK%2 != 0){
+            numberKA = numberKA+1;
+            numberKB = numberKA+9;
+            numberKC = numberKB/10;
+        }
+
+        System.out.print(numberKA+"\n"+numberKB+"\n"+numberKC);

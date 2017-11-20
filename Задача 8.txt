@@ -1,0 +1,9 @@
+ int a = 15, b  = 80, n = 2; // Входные данные: цена 1го пирожка Руб : Копейки, n - сколько купить пирожков
+        int rub = a*n;
+        int coin = b*n;
+        if(coin>=100){
+            System.out.println(coin/100+rub + " " + coin%100);
+        }
+       else {
+            System.out.println(rub + " " + coin);
+        }

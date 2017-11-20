@@ -1,0 +1,9 @@
+        Scanner scan = new Scanner(System.in);
+        int minutesPlus = scan.nextInt();
+        
+        int minutes = minutesPlus%60;
+        int hours = minutesPlus/60;
+        if (hours>23){
+            hours = hours%24;
+        }
+        System.out.println(hours+" "+minutes);

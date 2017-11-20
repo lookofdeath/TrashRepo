@@ -1,0 +1,25 @@
+	Scanner scan = new Scanner(System.in);
+        int kMax = scan.nextInt();
+        int kPlus = kMax+1;
+	int res = (int)((1+kPlus)/2.0*kPlus);
+        System.out.println(res);
+
+
+
+        Scanner scan = new Scanner(System.in);
+        int k = scan.nextInt();
+
+        int count = 0;
+        int counter = 0;
+        for (int i=0,a=0;i<k;a++){
+            if(a>k){
+                count=count+1;
+                a=count;
+                i++;
+            }
+            counter++;
+        }
+            System.out.println(counter);
+
+
+

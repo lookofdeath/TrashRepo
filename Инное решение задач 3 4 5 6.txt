@@ -1,0 +1,2 @@
+string s = "123";
+  System.out.println(s.substring(2) + s.substring(0, 1));

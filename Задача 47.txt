@@ -1,0 +1,9 @@
+        Scanner scan = new Scanner(System.in);
+        int degree = scan.nextInt();
+        double hSpeed = 360/12;
+        double mSpeed = hSpeed/60;
+
+        double hours = degree/hSpeed;
+        double minutes = (degree%hSpeed)/mSpeed;
+
+        System.out.print((int)hours+" "+(int)minutes);

@@ -1,0 +1,7 @@
+Scanner scan = new Scanner(System.in);
+        int apples = scan.nextInt();
+        int schoolKids = scan.nextInt();
+        if(apples > 0 && apples < 10000 && 0<schoolKids && schoolKids < 10000){
+            System.out.println(apples/schoolKids);
+            
+            }

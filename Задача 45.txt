@@ -1,0 +1,7 @@
+        Scanner scan = new Scanner(System.in);
+        int lesson = scan.nextInt();
+
+        int fullTime = ((45*lesson)+(5*(lesson/2))+(15*((lesson-1)/2))+540);
+        int hour = (int) (fullTime/60);
+        int minute = (int) fullTime%60;
+        System.out.println(hour+" "+minute);

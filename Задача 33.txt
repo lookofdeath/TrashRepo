@@ -1,0 +1,14 @@
+        Scanner scan = new Scanner(System.in);
+        int storonaA = scan.nextInt();
+        int storonaB = scan.nextInt();
+        int storonaC = scan.nextInt();
+
+        double semiPerimetr = (storonaA+storonaB+storonaC)/2;
+
+        double lengthA = 2*Math.sqrt(storonaB*storonaC*semiPerimetr*(semiPerimetr-storonaA))/(storonaB+storonaC);
+        String resA = String.format(Locale.ENGLISH,"%.3f",lengthA);
+        double lengthB = 2*Math.sqrt(storonaA*storonaC*semiPerimetr*(semiPerimetr-storonaB))/(storonaA+storonaC);
+        String resB = String.format(Locale.ENGLISH,"%.3f",lengthB);
+        double lengthC = 2*Math.sqrt(storonaA*storonaB*semiPerimetr*(semiPerimetr-storonaC))/(storonaB+storonaA);
+        String resC = String.format(Locale.ENGLISH,"%.3f",lengthC);
+        System.out.print(resA+"\n"+resB+"\n"+resC);

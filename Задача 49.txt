@@ -1,0 +1,9 @@
+        Scanner scan = new Scanner(System.in);
+        int length = scan.nextInt();
+        int stations = scan.nextInt();
+        int speed = scan.nextInt();
+        int timeStop = scan.nextInt();
+
+        int numberStation = (speed*timeStop)/(length/stations)%stations+1;
+
+        System.out.println(numberStation);
